@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roller Dice</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" href="images/diceImage.png">
+
+    <!-- npx tailwindcss -i ./input.css -o ./style.css --watch -->
+</head>
+
+<body class="bg-cyan-400 h-screen">
+    <div class="flex flex-col justify-center items-center h-full">
+        <div class="flex justify-center items-center mb-12 space-x-6">
+            <h1 class="text-8xl font-mono font-bold ">ROLLER DICE</h1>
+            <img class="size-20 object-contain" src="images/diceImage.png" alt="dice image">
+        </div>
+
+        <div class="flex justify-center items-center w-full">
+            <h4 class="text-4xl font-mono font-bold me-6"># of dice : </h4>
+            <input type="number" placeholder="Type here"
+                class="input input-bordered input-success w-full max-w-xs font-bold text-2xl me-6" value="1" min="1"
+                max="7" id="input" />
+
+            <button class="btn btn-error btn-wide font-bold text-white text-2xl" id="rollBtn">Roll Dice</button>
+        </div>
+
+        <p class="text-4xl font-bold font-mono my-6" id="diceNumber"></p>
+
+        <div class="flex justify-center items-center h-auto space-x-5" id="images"></div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
