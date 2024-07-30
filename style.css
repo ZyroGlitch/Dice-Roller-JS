@@ -1363,6 +1363,12 @@ html {
   outline-offset: 2px;
 }
 
+.mockup-phone .display {
+  overflow: hidden;
+  border-radius: 40px;
+  margin-top: -25px;
+}
+
 .mockup-browser .mockup-browser-toolbar .input {
   position: relative;
   margin-left: auto;
@@ -1716,6 +1722,11 @@ html {
 .size-40 {
   width: 10rem;
   height: 10rem;
+}
+
+.size-44 {
+  width: 11rem;
+  height: 11rem;
 }
 
 .h-screen {
