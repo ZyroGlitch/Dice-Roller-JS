@@ -1,5 +1,6 @@
 rollBtn.onclick = function () {
 
+    const body = document.getElementById('body');
     const numDice = document.getElementById('input').value;
     const rollBtn = document.getElementById('rollBtn');
     const diceNumber = document.getElementById('diceNumber');
@@ -16,5 +17,12 @@ rollBtn.onclick = function () {
 
     diceNumber.textContent = `Dice : ${diceValues.join(', ')}`;
     images.innerHTML = diceImages.join('');
+
+    // Adjust body height based on number of dice
+    if (numDice > 7) {
+        body.style.height = 'auto'; // Adjusts body height to fit content
+    } else {
+        body.style.height = '100vh'; // Keeps the height as full viewport height
+    }
 
 }
